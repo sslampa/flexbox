@@ -1,6 +1,7 @@
 body {
   background-color: #292929;
 }
+
 #container {
   display: flex;
   flex-direction: row;
@@ -20,6 +21,7 @@ body {
   text-align: center;
 }
 
+/* Creates boxes for content divs */
 .box {
   width: 300px;
   height: 200px;
@@ -28,23 +30,30 @@ body {
   margin: 25px;
 }
 
+/* For "first" row of content */
 #b1 {
   flex: 1 100%;
 }
 
+/* For "second" row of content */
 #b2, #b3 {
   flex: 1 45%;
 }
 
+/* For "third" row of content */
 #b4, #b5, #b6 {
   flex: 1 28%;
 }
 
+/* For "fourth" row of content */
 #b7, #b8, #b9, #b0 {
   flex: 1 18%;
 }
 
 @media all and (max-width: 750px) {
+
+  /* Changes elements for transition to row > column when at max-width:750px */
+
   #container > div {
     flex-direction: column;
   }
@@ -69,6 +78,7 @@ ul {
   padding: 10px;
 }
 
+/* Decorates nav bar */
 #header > ul > li > a {
   text-decoration: none;
   color: white;
@@ -77,6 +87,7 @@ ul {
   background-color:
 }
 
+/* Hover elements in "nav bar" change to black background */
 #header > ul > li > a:hover {
   background-color: black;
   padding: 10px;
@@ -108,7 +119,7 @@ div > img {
   margin: 10px;
 }
 
-#b7 > img, #b8 > img, #b9 > img, #b0 > img {
+#b7, #b8, #b9, #b0 > img {
   width: 70px;
   height: 70px;
   margin: 3px;
