@@ -58,3 +58,35 @@ body {
     flex: 1 53%;
   }
 }
+
+#header ul li {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul {
+  background-color: #292929;
+  padding: 10px;
+}
+
+#header > ul > li > a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  background-color:
+}
+
+#header > ul > li > a:hover {
+  background-color: black;
+  padding: 10px;
+}
+
+#header > ul > li > a[href="#"] {
+  background-color: green;
+  padding: 10px;
+}
+
+#footer {
+  text-decoration: none;
+}
