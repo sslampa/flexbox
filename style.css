@@ -1,0 +1,60 @@
+body {
+  background-color: #292929;
+}
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 4px dashed black;
+  border-radius: 15px;
+  background-color: white;
+}
+
+#header, #footer {
+  background-color: #B84026;
+  width: 300px;
+  height: 100px;
+  flex: 1 100%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.box {
+  width: 300px;
+  height: 200px;
+  background-color: #d3d3d3;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+#b1 {
+  flex: 1 100%;
+}
+
+#b2, #b3 {
+  flex: 1 48%;
+}
+
+#b4, #b5, #b6 {
+  flex: 1 30%;
+}
+
+#b7, #b8, #b9, #b0 {
+  flex: 1 22%;
+}
+
+@media all and (max-width: 750px) {
+  #container > div {
+    flex-direction: column;
+  }
+
+  #header, #footer {
+    flex: 1 100%;
+    overflow: auto;
+  }
+
+  #b1 {
+    flex: 1 53%;
+  }
+}
